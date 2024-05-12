@@ -39,20 +39,33 @@
 
         <form>
             <div>
-                <label>CHECK IN</label>
-                <input>
+                <label for="dia">CHECK IN</label>
+                <input type="date" id="dia">
             </div>
             <div>
-                <label>HORÁRIO</label>
-                <input>
+                <label for="hora">HORÁRIO</label>
+                <select name="select" >
+                    <option value="valor3">10:15</option>
+                    <option value="valor1">13:00</option>
+                    <option value="valor2">14:00</option>
+                    <option value="valor3">15:30</option>
+                    <option value="valor3">17:30</option>
+                </select>
             </div>
             <div>
-                <label>PROCEDIMENTO</label>
-                <input>
+                <label for="procedimento">PROCEDIMENTO</label>
+                <select name="select" id="procedimento">
+                    <option value="valor1">Pé e Mão</option>
+                    <option value="valor3">Mão</option>
+                    <option value="valor2">Francesinha</option>
+                </select>
             </div>
             <div>
-                <label>LOCAL</label>
-                <input>
+                <label for="local">LOCAL</label>
+                <select name="select" id="local">
+                    <option value="valor1">Nações Unidas 101 - São Paula</option>
+                    <option value="valor2">Vila Gilda 901 - São Paulo</option>
+                </select>
             </div>
             <button>AGENDAR AGORA</button>
 

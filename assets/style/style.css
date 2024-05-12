@@ -1,6 +1,7 @@
 
 /* FONTS  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 *{
     border: 0;
@@ -81,4 +82,22 @@ header div img{
 main{
     width: 100%;
     height: 1000px;
+}
+
+/* AGENDAMENTO  */
+main form{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+}
+main form div{
+    display: flex;
+    flex-direction: column;
+}
+main form div label{
+    color: #d8b192;
+    font-family: "Inter", sans-serif;
 }
