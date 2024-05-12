@@ -11,7 +11,7 @@
 /* ESTILOS DO HEADER  */
 header{
     width: 100%;
-    height: 700px;
+    height: 100vh;
 
     display: flex;
 }
@@ -26,16 +26,24 @@ header .direita{
     background-size: cover;
 }
 header .direita nav{
-    width: 80%;
+    width: 90%;
     height: 100px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
+}
+header .direita nav a{
     color: #fff;
     font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+header .direita nav #bAgenda{
+    border-radius: 100px;
+    border: #fff solid 1px;
+    padding: 6px;
 }
 
 /* header esquerda  */
@@ -45,4 +53,32 @@ header .esquerda{
 header .esquerda img{
     background-color: #fff;
     width: 100%;
+}
+
+/* div centro header  */
+
+header div{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    position: absolute;
+    z-index: 2;
+}
+header div img{
+    width: 320px;
+    margin-bottom: 80px;
+
+    filter: drop-shadow(5px 0 10px black);
+}
+
+
+/* ESTILOS DA MAIN  */
+
+main{
+    width: 100%;
+    height: 1000px;
 }
