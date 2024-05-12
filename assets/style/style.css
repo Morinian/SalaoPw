@@ -1,0 +1,48 @@
+
+/* FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILOS DO HEADER  */
+header{
+    width: 100%;
+    height: 700px;
+
+    display: flex;
+}
+header section{
+    width: 50%;
+    height: 100%;
+}
+
+/* header direita  */
+header .direita{
+    background-image: url(../img/mulherPrincipal.png);
+    background-size: cover;
+}
+header .direita nav{
+    width: 80%;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* header esquerda  */
+header .esquerda{
+    background-color: #d8b192;
+}
+header .esquerda img{
+    background-color: #fff;
+    width: 100%;
+}
