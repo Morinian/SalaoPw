@@ -203,3 +203,60 @@ main .carreira div li{
     margin-left: 30px;
     margin-bottom: 2px;
 }
+
+
+
+/* ESMALTES */
+main .esmaltes{
+    width: 100%;
+    background-color: #d8b192;
+
+    margin-bottom: 100px;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .esmaltes .cores{
+    width: 75%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main .esmaltes .cores div{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .esmaltes h2{
+    width: 35%;
+
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+main .esmaltes .cores div img{
+    margin-top: 20px;
+    width: 100%;
+
+    filter: drop-shadow(-20px 10px 10px #b7967c);
+}
+main .esmaltes .cores div h4{
+    width: 100%;
+    text-align: center;
+
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
