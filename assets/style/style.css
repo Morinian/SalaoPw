@@ -211,7 +211,6 @@ main .esmaltes{
     width: 100%;
     background-color: #d8b192;
 
-    margin-bottom: 100px;
     margin-top: 10px;
 
     display: flex;
@@ -260,3 +259,180 @@ main .esmaltes .cores div h4{
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
+
+
+/* TABELA DE PREÇOS  */
+main .tabela{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+main .tabela .precos{
+    display: flex;
+    justify-content: center;
+}
+main .tabela .imagem, main .tabela .precos{
+    width: 50%;
+}
+main .tabela .precos .meioprecos{
+    width: 66%;
+}
+main .tabela .meioprecos h2{
+    font-family: "Montserrat", sans-serif;
+    color: #D8B192;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+main .tabela .meioprecos .titulopreco{
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.2rem;
+    color: #767676;
+    font-family: "Montserrat", sans-serif;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+main .tabela .precos .meioprecos button{
+    width: 100px;
+    height: 35px;
+
+    background-color: #D8B192;
+    margin-top: 20px;
+
+    color: #fff;
+    background-color: #d8b192;
+    border-radius: 30px;
+}
+main .tabela .meioprecos p{
+    color: #767676;
+    font-family: "Montserrat", sans-serif;
+
+    line-height: 28px;
+}
+main .tabela .imagemAbs{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: end;
+}
+main .tabela .imagemAbs img{
+    width: 60%;
+}
+
+/* NOSSOS PRODUTOS */
+.produtos{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url(../img/fundogrid.png);
+    background-size: contain;
+
+    margin-bottom: 100px;
+}
+.produtos h2{
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    color: #D8B192;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    margin-bottom: 40px;
+}
+.produtosgrid {
+    width: 80%;
+    height: 615px;
+
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    gap: 50px;    
+ }
+ #item-0, #item-1, #item-2, #item-3, #item-4, #item-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .produtosgrid h2{
+    width: 60%;
+
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+ }
+ #item-0 {
+ 
+    background-image: url(../img/grid1.png);
+    background-size: cover;
+
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 3;
+    
+ }
+ #item-1 {
+ 
+    background-image: url(../img/grid2.png);
+    background-size: cover; 
+
+    grid-row-start: 1;
+    grid-column-start: 3;
+ 
+    grid-row-end: 2;
+    grid-column-end: 4;
+    
+ }
+ #item-2 {
+ 
+    background-image: url(../img/grid5.png);
+    background-size: cover;
+
+    grid-row-start: 2;
+    grid-column-start: 3;
+ 
+    grid-row-end: 3;
+    grid-column-end: 4;
+    
+ }
+ #item-3 {
+ 
+    background-image: url(../img/grid3.png);
+    background-size: cover;
+
+    grid-row-start: 1;
+    grid-column-start: 4;
+ 
+    grid-row-end: 2;
+    grid-column-end: 5;
+    
+ }
+ #item-4 {
+ 
+    background-image: url(../img/grid4.png);
+    background-size: cover;
+
+    grid-row-start: 2;
+    grid-column-start: 4;
+ 
+    grid-row-end: 3;
+    grid-column-end: 5;
+    
+ }
