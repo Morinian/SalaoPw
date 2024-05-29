@@ -438,3 +438,15 @@ main .tabela .imagemAbs img{
     grid-column-end: 5;
     
  }
+
+ /* NOTICIAS */
+ .noticias{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+ }
+ .noticias .NailCare{
+    display: flex;
+    flex-direction: column;
+ }
