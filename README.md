@@ -3,7 +3,7 @@
 <img src="assets/img/imgRead.png"/>
 
 Trabalho em grupo para avaliação do semestre
-Teste
+
 
 <table>
   <tr>
