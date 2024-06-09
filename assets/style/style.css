@@ -47,6 +47,7 @@ header .direita nav a{
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     font-size: 0.9rem;
+    z-index: 3; 
 }
 header .direita nav #bAgenda{
     border-radius: 100px;
@@ -438,3 +439,70 @@ main .tabela .imagemAbs img{
     grid-column-end: 5;
     
  }
+
+ /* Noticiais */
+ .noticia{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.noticia h2{
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    color: #D8B192;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    margin-bottom: 40px;
+}
+.noticiaGlobal{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+
+}
+.not {
+    width: 30%;
+    height: auto;
+
+    display: flex;
+
+    flex-direction: column;
+}
+.not h3{
+    font-size: 1.5rem;
+    color: #767676;
+    font-family: "Montserrat", sans-serif;
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.not p{
+    color: #767676;
+    font-family: "Montserrat", sans-serif;
+
+    line-height: 20px;
+}
+.not img{
+    width: 100%;
+}
+
+/* Siga-me */
+.siga{
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-image: url(../img/fundo.png);
+    background-size: contain;
+    margin-top: 150px;
+}
