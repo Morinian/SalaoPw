@@ -26,90 +26,70 @@
             <nav>
                 <a href="#nail">Home</a>
                 <a href="#carreira">Sobre</a>
-                <a href="#esmaltes">Produtos</a>
-                <a href="#">Contato</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#contato">Contato</a>
 
                 <a href="assets/html/login.html" id="bAgenda">LOGIN</a>
             </nav>
         </section>
-        
+
     </header>
 
     <main>
 
         <!-- AGENDAMENTO  -->
-        <form>
+        <form id="agendamentoForm">
             <div>
-                <label for="dia"> 
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
-                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
-                </svg> 
-                CHECK IN</label>
-
-                <input type="date" id="dia">
+                <label for="dia">CHECK IN</label>
+                <input type="date" id="dia" required>
             </div>
             <div>
-                <label for="hora"> 
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
-                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
-                    </svg>
-
-                    HORÁRIO</label>
-                <select name="select" >
-                    <option value="valor3">10:15</option>
-                    <option value="valor1">13:00</option>
-                    <option value="valor2">14:00</option>
-                    <option value="valor3">15:30</option>
-                    <option value="valor3">17:30</option>
+                <label for="hora">HORÁRIO</label>
+                <select name="hora" id="hora" required>
+                    <option value="">Selecione um horário</option>
+                    <option value="10:15">10:15</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:30">15:30</option>
+                    <option value="17:30">17:30</option>
                 </select>
             </div>
             <div>
-                <label for="procedimento">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-                    </svg>
-
-                    PROCEDIMENTO</label>
-                <select name="select" id="procedimento">
-                    <option value="valor1">Pé e Mão</option>
-                    <option value="valor3">Mão</option>
-                    <option value="valor2">Francesinha</option>
+                <label for="procedimento">PROCEDIMENTO</label>
+                <select name="procedimento" id="procedimento" required>
+                    <option value="">Selecione um procedimento</option>
+                    <option value="Pé e Mão">Pé e Mão</option>
+                    <option value="Mão">Mão</option>
+                    <option value="Francesinha">Francesinha</option>
                 </select>
             </div>
             <div>
-                <label for="local">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                    </svg>
-
-                    LOCAL</label>
-                <select name="select" id="local">
-                    <option value="valor1">Nações Unidas 101 - São Paulo</option>
-                    <option value="valor2">Vila Gilda 901 - São Paulo</option>
+                <label for="local">LOCAL</label>
+                <select name="local" id="local" required>
+                    <option value="">Selecione um local</option>
+                    <option value="Nações Unidas 101 - São Paulo">Nações Unidas 101 - São Paulo</option>
+                    <option value="Vila Gilda 901 - São Paulo">Vila Gilda 901 - São Paulo</option>
                 </select>
             </div>
-            <button>AGENDAR AGORA</button>
-
+            <button type="submit">AGENDAR AGORA</button>
         </form>
-
+    
+        <script src="./assets/js/scriptAgendamento.js"></script>
 
         <!-- ALGUNS PROCEDIMENTOS -->
         <section class="nail" id="nail">
             <div>
                 <img src="assets/img/nail1.png">
                 <h3>Nail Care</h3>
-                <p>Cuidados com as unhas incluem limpeza, corte regular e hidratação para mantê-las saudáveis e protegidas contra danos.</p>
+                <p>Cuidados com as unhas incluem limpeza, corte regular e hidratação para mantê-las saudáveis e
+                    protegidas contra danos.</p>
             </div>
 
             <div>
                 <img src="assets/img/nail2.png">
                 <h3>Nail Art</h3>
-                <p>Decoração das unhas com designs criativos e elaborados, que podem incluir padrões, desenhos, adesivos, pedras e cores variadas, criando uma expressão pessoal e estética única.</p>
+                <p>Decoração das unhas com designs criativos e elaborados, que podem incluir padrões, desenhos,
+                    adesivos, pedras e cores variadas, criando uma expressão pessoal e estética única.</p>
             </div>
 
             <div>
@@ -120,14 +100,17 @@
         </section>
 
         <!-- MINHA CARREIRA  -->
-        <section class="carreira">
+        <section class="carreira" id="carreira">
             <img src="assets/img/carreira.png">
             <div>
                 <h2>MINHA CARREIRA</h2>
 
-                <h4>Resumo Profissional:</h4> 
+                <h4>Resumo Profissional:</h4>
                 <p>
-                    Cícera Oliveira é uma manicure apaixonada e talentosa, especializada em transformar unhas comuns em verdadeiras obras de arte. Com anos de experiência e dedicação ao ofício, Cícera é reconhecida por sua habilidade excepcional em nail art e sua capacidade de proporcionar uma experiência de cuidado excepcional aos clientes.
+                    Cícera Oliveira é uma manicure apaixonada e talentosa, especializada em transformar unhas comuns em
+                    verdadeiras obras de arte. Com anos de experiência e dedicação ao ofício, Cícera é reconhecida por
+                    sua habilidade excepcional em nail art e sua capacidade de proporcionar uma experiência de cuidado
+                    excepcional aos clientes.
                 </p>
 
                 <h4>Formação e Certificações:</h4>
@@ -139,21 +122,27 @@
 
                 <li>Manicure Sênior, Salão de Beleza Glamour, 2010 - Presente</li>
                 <li>Especializada em design de unhas e nail art personalizada para uma clientela diversificada.</li>
-                <li>Responsável pelo atendimento personalizado, garantindo a satisfação dos clientes e mantendo altos padrões de higiene e segurança.</li>
+                <li>Responsável pelo atendimento personalizado, garantindo a satisfação dos clientes e mantendo altos
+                    padrões de higiene e segurança.</li>
                 <li>Consultora de Beleza, Loja de Cosméticos Beleza Natural, 2014 - 2018</li>
-                <li>Fornecia consultoria especializada em cuidados com as unhas e recomendava produtos adequados para clientes em busca de soluções eficazes.</li>
-                
+                <li>Fornecia consultoria especializada em cuidados com as unhas e recomendava produtos adequados para
+                    clientes em busca de soluções eficazes.</li>
+
                 <h4>Contribuições e Reconhecimentos:</h4>
 
-                <li>Participação em Feiras de Beleza Locais, demonstrando técnicas de nail art e compartilhando dicas de cuidados com as unhas.</li>
-                <li>Destaque em Publicações de Revistas de Moda Local, reconhecida por suas criações únicas e habilidades artísticas.</li>
-                <li>Reconhecimento nas Redes Sociais: Cícera mantém uma forte presença online, compartilhando regularmente suas últimas criações e dicas de cuidados com as unhas, acumulando uma base fiel de seguidores.</li>
+                <li>Participação em Feiras de Beleza Locais, demonstrando técnicas de nail art e compartilhando dicas de
+                    cuidados com as unhas.</li>
+                <li>Destaque em Publicações de Revistas de Moda Local, reconhecida por suas criações únicas e
+                    habilidades artísticas.</li>
+                <li>Reconhecimento nas Redes Sociais: Cícera mantém uma forte presença online, compartilhando
+                    regularmente suas últimas criações e dicas de cuidados com as unhas, acumulando uma base fiel de
+                    seguidores.</li>
             </div>
         </section>
 
 
         <!-- ESMALTES  -->
-        <section class="esmaltes"> 
+        <section class="esmaltes">
             <h2>Unindo Cores e Estilos para Criar Looks Únicos</h2>
             <div class="cores">
                 <div>
@@ -181,7 +170,7 @@
                 <div class="meioprecos">
                     <h2>Tratamentos & Preços:</h2>
                     <div class="titulopreco">
-                        <h5> 
+                        <h5>
                             Mão
                         </h5>
                         <h5>
@@ -189,11 +178,12 @@
                         </h5>
                     </div>
                     <p>
-                        Preparação, corte e limagem das unhas, cuidados com cutículas, esfoliação e hidratação das mãos, aplicação de esmalte e finalização.
+                        Preparação, corte e limagem das unhas, cuidados com cutículas, esfoliação e hidratação das mãos,
+                        aplicação de esmalte e finalização.
                     </p>
-    
+
                     <div class="titulopreco">
-                        <h5> 
+                        <h5>
                             Mão
                         </h5>
                         <h5>
@@ -201,11 +191,12 @@
                         </h5>
                     </div>
                     <p>
-                        Preparação, corte e limagem das unhas, cuidados com cutículas, esfoliação e hidratação das mãos, aplicação de esmalte e finalização.
+                        Preparação, corte e limagem das unhas, cuidados com cutículas, esfoliação e hidratação das mãos,
+                        aplicação de esmalte e finalização.
                     </p>
-    
+
                     <div class="titulopreco">
-                        <h5> 
+                        <h5>
                             Mão
                         </h5>
                         <h5>
@@ -213,28 +204,29 @@
                         </h5>
                     </div>
                     <p>
-                        Preparação, corte e limagem das unhas, cuidados com cutículas, esfoliação e hidratação das mãos, aplicação de esmalte e finalização.
+                        Preparação, corte e limagem das unhas, cuidados com cutículas, esfoliação e hidratação das mãos,
+                        aplicação de esmalte e finalização.
                     </p>
                     <button>MAIS</button>
                 </div>
             </div>
-            
+
             <div class="imagem">
-                
+
             </div>
             <div class="imagemAbs">
                 <img src="assets/img/imgpreco.png"></img>
             </div>
-            
+
         </section>
 
         <!-- NOSSOS PRODUTOS  -->
 
-        <section class="produtos">
+        <section class="produtos" id="produtos">
             <h2>Nossos Produtos para Unhas</h2>
             <div class="produtosgrid">
                 <div id="item-0">
-                    
+
                 </div>
                 <div id="item-1">
                     <h2>Produtos Limitados</h2>
@@ -252,23 +244,29 @@
         </section>
 
         <!-- NOTICIAS E TENDENCIAS -->
-         <section class="noticia">
+        <section class="noticia" id="noticia">
             <h2>NOTÍCIAS E TENDÊNCIAS REFINADAS</h2>
 
             <div class="noticiaGlobal">
                 <div class="not">
                     <img src="assets/img/noticia1.png">
                     <h3>Melhor nail care</h3>
-                    <p>Cuidados com as unhas envolvem práticas como limpeza, corte regular, hidratação e proteção contra danos. Isso inclui usar produtos específicos, como removedores de esmalte sem acetona, manter as unhas curtas para evitar quebras e usar luvas ao lidar com produtos químicos. Além disso, é importante nutrir as unhas e cutículas com óleos e cremes para mantê-las saudáveis e fortalecidas.</P>
+                    <p>Cuidados com as unhas envolvem práticas como limpeza, corte regular, hidratação e proteção contra
+                        danos. Isso inclui usar produtos específicos, como removedores de esmalte sem acetona, manter as
+                        unhas curtas para evitar quebras e usar luvas ao lidar com produtos químicos. Além disso, é
+                        importante nutrir as unhas e cutículas com óleos e cremes para mantê-las saudáveis e
+                        fortalecidas.</P>
                 </div>
-    
+
                 <div class="not">
                     <img src="assets/img/noticia2.png">
                     <h3>The Art of Nails</h3>
-                    <p>Nail art é a prática de decorar as unhas com designs criativos e elaborados, que podem incluir padrões, desenhos, adesivos, pedras e cores variadas, criando uma expressão pessoal e estética única.                </p>
-                </div>    
+                    <p>Nail art é a prática de decorar as unhas com designs criativos e elaborados, que podem incluir
+                        padrões, desenhos, adesivos, pedras e cores variadas, criando uma expressão pessoal e estética
+                        única. </p>
+                </div>
             </div>
-         </section>
+        </section>
 
         <!-- Siga-me -->
         <section class="siga">
@@ -276,6 +274,57 @@
                 <img src="assets/img/sigame.png">
             </a>
         </section>
+        <!-- Contate -->
+        <section class="contact-section" id="contato">
+            <div class="contact-container">
+                <div class="contact-image">
+                    <img src="assets/img/unhacontato.png" alt="Manicure">
+                </div>
+                <div class="contact-info">
+                    <h2>CONTATE O MEU SALÃO</h2>
+                    <p>Dê-nos uma ligação para agendar um tratamento.</p>
+                    <p class="phone-number">(11) 98666-4608</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Roda Pé -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h2>EVERCURES</h2>
+                </div>
+                <div class="footer-section">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#nail">Home</a></li>
+                        <li><a href="#carreira">Sobre</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#noticia">Novidades</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><a href="mailto:CleaneMail@gmail.com">CleaneMail@gmail.com</a></p>
+                    <p><a href="tel:+5511989944608">(11) 98994-4608</a></p>
+                    <p>Rua Marzim Rubano<br>São Paulo-SP<br>02137</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="assets/img/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="assets/img/twiter.png" alt="Twitter"></a>
+                        <a href="#"><img src="assets/img/insta.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Termos de Uso</p>
+                <p>Política de Privacidade</p>
+            </div>
+        </footer>
+
     </main>
 
 </body>

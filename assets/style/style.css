@@ -506,3 +506,125 @@ main .tabela .imagemAbs img{
     background-size: contain;
     margin-top: 150px;
 }
+/* Contate*/
+.contact-section {
+    background-color: #FFF9F2;
+    padding: 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #FAEDEB;
+    padding: 20px;
+    border-radius: 10px;
+    width: 1200px;
+    height: 200px;
+}
+
+.contact-image img {
+    height: 200px;
+}
+
+.contact-info {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    color: #D39583;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    color: #000;
+    margin: 5px 0;
+}
+
+.contact-info .phone-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Roda pé */
+
+footer {
+    background-color: #DDB899;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h2, .footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    margin: 5px 10px;
+}
+
+.footer-bottom p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 54px;
+    height: 54px;
+}

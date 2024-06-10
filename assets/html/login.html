@@ -10,14 +10,18 @@
     
     <main>
         <section>
-            <form>
+            <form id="loginForm">
                 <h2>LOGIN</h2>
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" required>
+                <div class="form">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email"><span>E-mail</span></label>
+                </div>
+
+                <div class="form">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password"><span>Senha</span></label>
+                </div>
     
                 <div class="form-footer">
                     <a href="#" class="forgot-password">Esqueceu a senha?</a>
@@ -30,5 +34,6 @@
         <img src="../img/mulherPrincipal.png">
     </main>
 
+    <script src="../js/scriptValidacao.js"></script>
 </body>
 </html>
