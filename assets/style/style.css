@@ -500,8 +500,6 @@ main .tabela .imagemAbs img{
     display: flex;
     justify-content: center;
     align-items: center;
-
-
     background-image: url(../img/fundo.png);
     background-size: contain;
     margin-top: 150px;
@@ -520,7 +518,6 @@ main .tabela .imagemAbs img{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    background-color: #FAEDEB;
     padding: 20px;
     border-radius: 10px;
     width: 1200px;
