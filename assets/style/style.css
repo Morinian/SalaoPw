@@ -528,8 +528,20 @@ main .tabela .imagemAbs img{
     height: 200px;
 }
 
+.contact-info-container{
+    position: relative;
+    top:2px;
+    height: 151px;
+    margin-left: -13px;
+    padding-right: 50px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #ffe9e9;
+}
+
 .contact-info {
-    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 31px;
     text-align: center;
 }
 
@@ -558,12 +570,12 @@ footer {
     text-align: center;
 }
 
-.footer-container {
+.footer-row {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .footer-section {
@@ -585,19 +597,20 @@ footer {
     margin-bottom: 10px;
 }
 
-.footer-section ul li a {
+.footer-section ul li a, p a{
     color: #fff;
     text-decoration: none;
+    transition: 0.2s;
 }
 
-.footer-section p a {
-    color: #fff;
-    text-decoration: none;
+.footer-section ul li a:hover, p a:hover{
+    color: #683962;
 }
 
 .footer-bottom {
     border-top: 1px solid #fff;
     padding-top: 10px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
