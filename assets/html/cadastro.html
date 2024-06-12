@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="../style/cadastro.css">
+    <title>Cadastro</title>
 </head>
 <body>
-    
     <main>
-        <img src="../img/mulherPrincipal.png">
         <section>
-            <form id="loginForm">
-                <h2>LOGIN</h2>
+            <form id="registerForm">
+                <h2>Cadastro</h2>
+
+                <div class="form">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name"><span>Nome</span></label>
+                </div>
+
+                <div class="form">
+                    <input type="text" id="cpf" name="cpf" required>
+                    <label for="cpf"><span>CPF</span></label>
+                </div>
 
                 <div class="form">
                     <input type="email" id="email" name="email" required>
@@ -23,17 +31,27 @@
                     <input type="password" id="password" name="password" required>
                     <label for="password"><span>Senha</span></label>
                 </div>
-    
-                <div class="form-footer">
-                    <a href="cadastro.html" class="create-account">Criar conta</a>
+
+                <div class="form">
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <label for="confirmPassword"><span>Confirmar Senha</span></label>
+                </div>
+
+                <div class="form">
+                    <input type="date" id="birthdate" name="birthdate" required>
+                    <label for="birthdate"></label>
                 </div>
     
-                <button type="submit">CADASTRAR</button>
-
+                <div class="form-footer">
+                    <a href="login.html" class="login-link">Já tem uma conta? Entrar</a>
+                </div>
+    
+                <button type="submit">Criar conta</button>
             </form>
         </section>
+        <img src="../img/mulherPrincipal.png" alt="Imagem principal">
     </main>
 
-    <script src="../js/scriptValidacao.js"></script>
+    <script src="../js/scriptCadastro.js"></script>
 </body>
 </html>

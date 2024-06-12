@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+section {
+    flex: 1;
+    background-color: #F2E2CF;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.form {
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+input {
+    color: #000000;
+    font-size: 28px;
+    width: 100%;
+    padding: 20px 5px 5px;
+    background-color: #f1dbc5;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="date"] {
+    font-size: 20px;
+}
+
+label {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+span {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+
+label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #653F24;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+input:focus + label span,
+input:valid + label span {
+    transform: translateY(-150%);
+    font-size: 14px;
+    bottom: 10px;
+    color: #653F24;
+}
+
+input:focus + label::after,
+input:valid + label::after {
+    transform: translateX(0%);
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-footer a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #d4a373;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
